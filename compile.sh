@@ -1,0 +1,1 @@
+java -jar ../../../tools/apktool.jar b base; jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ../../../tools/my-release-key.keystore base/dist/base.apk alias_name; adb uninstall com.xyz.nbf; adb install base/dist/base.apk
